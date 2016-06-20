@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgeView">
+        <attr name="badge_padding_top" format="dimension" />
+        <attr name="badge_padding_right" format="dimension" />
+        <attr name="badge_count" format="integer" />
+        <attr name="badge_none_show" format="boolean" />
+        <attr name="badge_color" format="color" />
+    </declare-styleable>
+</resources>
