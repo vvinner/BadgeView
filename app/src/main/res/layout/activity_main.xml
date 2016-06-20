@@ -89,7 +89,10 @@
             android:text="Hello World"
             app:badge_count="1"
             app:badge_color="#20A6EF"
-            app:badge_padding_right="20dp" />
+            app:badge_padding_right="20dp"
+            app:badge_padding_top="20dp"
+            app:badge_none_show="true"
+            />
 
     </LinearLayout>
 
