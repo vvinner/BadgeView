@@ -1,5 +1,5 @@
 # BadgeView
-在任何View上添加红点
+在任何View上添加统一样式的红点
 ScreenShort:
 ----
 ![github](https://github.com/vvinner/BadgeView/blob/master/screenshorts/screen1.png "github")
