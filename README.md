@@ -1,5 +1,7 @@
 # BadgeView
 在任何View上添加统一样式的红点
+如果布局是继承自ViewGroup(LinearLayout、RelativeLayout)请为该布局设置Background
+'android:background="#00000000"'
 ScreenShort:
 ----
 ![github](https://github.com/vvinner/BadgeView/blob/master/screenshorts/screen1.png "github")
