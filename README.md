@@ -1,6 +1,6 @@
 # BadgeView
-在任何View上添加统一样式的红点
-如果布局是继承自ViewGroup(LinearLayout、RelativeLayout)请为该布局设置Background
+在任何View上添加统一样式的红点<br>
+如果布局是继承自ViewGroup(LinearLayout、RelativeLayout)请为该布局设置Background<br>
 'android:background="#00000000"'
 ScreenShort:
 ----
