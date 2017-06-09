@@ -4,10 +4,10 @@
 'android:background="#00000000"'
 ScreenShort:
 ----
-![github](https://github.com/vvinner/BadgeView/blob/master/screenshorts/screen1.png "github")
+![github](https://github.com/vvinner/BadgeView/blob/master/screenshorts/screen1.png "github")<br>
 Usage:
-------
-    <com.porster.badgeview.badgeview.BadgeTextView
+```Xml
+    <com.porster.badgeview.badgeview.BadgeTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_launcher"
@@ -19,9 +19,11 @@ Usage:
             app:badge_padding_top="20dp"
             app:badge_none_show="true"
             />
+```
 Code:
-----
-      BadgeTextView.
+```Java
+      BadgeTextView.
                 setBadgeColor(Color.RED).
                 setCount(99).
                 setShown(true);//Defualt true
+```
