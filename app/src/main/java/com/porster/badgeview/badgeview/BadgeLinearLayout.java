@@ -3,13 +3,13 @@ package com.porster.badgeview.badgeview;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
-public class BadgeRelativeLayout extends RelativeLayout implements IBadgeViewImpl{
+public class BadgeLinearLayout extends LinearLayout implements IBadgeViewImpl{
 
 	private IBadgeView mBadgeView;
 
-	public BadgeRelativeLayout(Context context, AttributeSet attrs) {
+	public BadgeLinearLayout(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		setWillNotDraw(false);
 		mBadgeView=new IBadgeView(this, context,attrs);
@@ -19,6 +19,7 @@ public class BadgeRelativeLayout extends RelativeLayout implements IBadgeViewImp
 		super.onSizeChanged(w, h, oldw, oldh);
 		mBadgeView.onSizeChanged(w, h);
 	}
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);

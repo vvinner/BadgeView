@@ -6,11 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+
+    <com.porster.badgeview.badgeview.BadgeLinearLayout
+        android:id="@+id/test_linear2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="10dp"
+        android:background="#ffffff"
+        app:badge_count="9"
         android:layout_weight="1">
         <TextView
             android:layout_width="match_parent"
@@ -41,9 +45,9 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Tab3:\nBadgeTextView.\nsetBadgeCount(1).\nsetColor(Color.parse(#20A6EF));"
+            android:text="Tab3:\nBadgeTextView.\nsetBadgeCount(1).\nsetColor(Color.parse(#20A6EF));\n\n如果是容器类布局LinearLayout、RelativeLayout等,请设置background属性"
             android:background="#eeeeee"/>
-    </LinearLayout>
+    </com.porster.badgeview.badgeview.BadgeLinearLayout>
 
     <View
         android:layout_width="match_parent"
@@ -90,7 +94,6 @@
             app:badge_count="1"
             app:badge_color="#20A6EF"
             app:badge_padding_right="20dp"
-            app:badge_padding_top="20dp"
             app:badge_none_show="true"
             />
 
