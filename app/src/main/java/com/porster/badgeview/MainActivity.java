@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.porster.badgeview.badgeview.BadgeLinearLayout;
 import com.porster.badgeview.badgeview.BadgeTextView;
+import com.porster.badgeview.badgeview.IBadgeUtils;
 
 import java.util.Random;
 
@@ -33,6 +34,8 @@ public class MainActivity extends Activity {
         badge_tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                badge_tv2.setPaddingTop(IBadgeUtils.dip2px(v.getContext(),new Random().nextInt(10)));
+                badge_tv2.setPaddingRight(IBadgeUtils.dip2px(v.getContext(),new Random().nextInt(50)));
                 badge_tv2.setBadgeColor(Color.BLACK);
                 badge_tv2.setBadgeCount(new Random().nextInt(100));
             }

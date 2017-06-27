@@ -51,6 +51,19 @@ public class IBadgeView {
 	/**红点距离视图右边距*/
 	private int mPaddingRight;
 
+
+	public IBadgeView setPaddingTop(int paddingTop) {
+		mPaddingTop = paddingTop;
+		mView.invalidate();
+		return this;
+	}
+
+	public IBadgeView setPaddingRight(int paddingRight) {
+		mPaddingRight = paddingRight;
+		mView.invalidate();
+		return this;
+	}
+
 	/**
 	 * 请重写
 	 * @param canvas
@@ -168,6 +181,5 @@ public class IBadgeView {
 		mTextPaint.setTextSize(mBadgeHeight*0.8f);
 
 		mView.invalidate();
-		mView.postInvalidate();
 	}
 }

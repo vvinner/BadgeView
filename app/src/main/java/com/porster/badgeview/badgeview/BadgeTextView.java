@@ -35,4 +35,12 @@ public class BadgeTextView extends TextView implements IBadgeViewImpl{
 	public IBadgeView setBadgeColor(int color) {
 		return mBadgeView.setColor(color);
 	}
+	public IBadgeView setPaddingTop(int paddingTop) {
+		return mBadgeView.setPaddingTop(paddingTop);
+	}
+	public IBadgeView setPaddingRight(int paddingRight) {
+		return mBadgeView.setPaddingRight(paddingRight);
+	}
+
+
 }
