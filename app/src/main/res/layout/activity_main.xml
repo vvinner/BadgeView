@@ -60,6 +60,7 @@
         android:paddingTop="3dp">
 
         <com.porster.badgeview.badgeview.BadgeTextView
+            android:id="@+id/badge_tv1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -72,6 +73,7 @@
 
 
         <com.porster.badgeview.badgeview.BadgeTextView
+            android:id="@+id/badge_tv2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

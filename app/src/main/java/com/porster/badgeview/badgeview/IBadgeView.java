@@ -60,6 +60,10 @@ public class IBadgeView {
 			if(mCount<10){//圆
 				canvas.drawCircle(mViewWidth-mBadgeWidth/2-mPaddingRight,mBadgeHeight/2+mPaddingTop,circleRadius,mPaint);
 			}else{//椭圆
+				rectF=new RectF(mViewWidth-mBadgeWidth-mPaddingRight,
+						mPaddingTop,
+						mViewWidth-mPaddingRight,
+						mBadgeHeight+mPaddingTop);
 				canvas.drawRoundRect(rectF,(int)(mBadgeWidth*0.6),(int)(mBadgeWidth*0.6),mPaint);
 			}
 			if(mCount>0){
@@ -77,11 +81,6 @@ public class IBadgeView {
 	protected void onSizeChanged(int w,int h) {
 		mViewWidth=w;
 		mViewHeight=h;
-
-		rectF=new RectF(mViewWidth-mBadgeWidth-mPaddingRight,
-				mPaddingTop,
-				mViewWidth-mPaddingRight,
-				mBadgeHeight+mPaddingTop);
 	}
 	private View mView;
 	private Context mContext;
@@ -131,7 +130,7 @@ public class IBadgeView {
 	 * @return
 	 */
 	public IBadgeView setColor(int color){
-		mPaint.setColor(mCount);
+		mPaint.setColor(color);
 		mView.invalidate();
 		return this;
 	}
