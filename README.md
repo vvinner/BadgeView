@@ -30,3 +30,23 @@ Code:
                 setCount(99).
                 setShown(true);//Defualt true
 ```
+NewApi
+====
+IBadgeView新增<br>
+setPaddingTop<br>
+setPaddingRight<br>
+函数对应<br>
+app:badge_padding_top<br>
+app:badge_padding_right<br>
+由于该函数不是必须,考虑可自行配置，如果需要,请在View中添加以下函数
+```Java
+public class BadgeTextView extends TextView implements IBadgeViewImpl{
+  ...
+  public IBadgeView setPaddingTop(int paddingTop) {
+   return mBadgeView.setPaddingTop(paddingTop);
+  }
+  public IBadgeView setPaddingRight(int paddingRight) {
+   return mBadgeView.setPaddingRight(paddingRight);
+  }
+ }
+```
