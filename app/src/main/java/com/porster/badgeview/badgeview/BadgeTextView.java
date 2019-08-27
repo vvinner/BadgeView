@@ -7,6 +7,13 @@ import android.widget.TextView;
 
 public class BadgeTextView extends TextView implements IBadgeViewImpl{
 
+	public IBadgeView setPaddingTop(int paddingTop) {
+		return mBadgeView.setPaddingTop(paddingTop);
+	}
+	public IBadgeView setPaddingRight(int paddingRight) {
+		return mBadgeView.setPaddingRight(paddingRight);
+	}
+
 	private IBadgeView mBadgeView;
 	
 	public BadgeTextView(Context context, AttributeSet attrs) {
@@ -35,12 +42,7 @@ public class BadgeTextView extends TextView implements IBadgeViewImpl{
 	public IBadgeView setBadgeColor(int color) {
 		return mBadgeView.setColor(color);
 	}
-	public IBadgeView setPaddingTop(int paddingTop) {
-		return mBadgeView.setPaddingTop(paddingTop);
-	}
-	public IBadgeView setPaddingRight(int paddingRight) {
-		return mBadgeView.setPaddingRight(paddingRight);
-	}
+
 
 
 }
